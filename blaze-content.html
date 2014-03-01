@@ -11,8 +11,8 @@
 	<p>with obj (Template.test.object):</p>
 	<ul>
 	{{#with obj}}
-		<li>content: "{{content}}"</li>
-		<li>content_: "{{content_}}"</li>
+		<li>content: "<b>{{content}}</b>" (expect "content")</li>
+		<li>content_: <b>"{{content_}}</b>" (expect "content_")</li>
 	{{/with}}
 	</ul>
 </template>
