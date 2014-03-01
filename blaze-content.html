@@ -1,0 +1,18 @@
+<head>
+  <title>blaze-content</title>
+</head>
+
+<body>
+  {{> test}}
+</body>
+
+<template name="test">
+	<p>Template.test.content: "{{content}}"</p>
+	<p>with obj (Template.test.object):</p>
+	<ul>
+	{{#with obj}}
+		<li>content: "{{content}}"</li>
+		<li>content_: "{{content_}}"</li>
+	{{/with}}
+	</ul>
+</template>
